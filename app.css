@@ -4,11 +4,85 @@
 
 body {
     margin: 5em 15em;
-    border: 1px solid rgb(192, 35, 35);
     text-align: center;
 }
 
 ul {
     list-style: none;
     float: right;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container h1 {
+    color: silver;
+    font-size: 3em;
+}
+
+.row-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.row-1 div {
+    margin: 1em 8em;
+}
+
+.row-1 div h1 {
+    margin-bottom: .5em;
+}
+
+.row-1 div p {
+    font-size: small;
+    padding: 0 3em;
+}
+
+.row-2 {
+    margin: 2em auto;
+    padding: 1em 5em;
+}
+
+.row-2 p {
+    margin: 1em auto;
+    padding: 0 24em;
+    font-size: small;
+}
+
+.row-3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.row-3 div {
+    padding: .5em 4em;
+}
+
+.row-3 .col-1 {
+    padding-left: 10em;
+}
+
+.row-3 .col-1 h2,
+.row-3 .col-1 p {
+    text-align: left;
+}
+
+.row-3 .col-1 p {
+    margin: 1em auto;
+}
+
+.row-3 .col-2 div {
+    padding-right: 8em;
+}
+
+.row-3 .col-2 div:nth-of-type(1) h1 {
+    margin-top: 2em;
+}
+
+.row-3 .col-2 div h1 {
+    margin-bottom: .2em;
 }
